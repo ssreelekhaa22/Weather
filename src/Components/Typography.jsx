@@ -10,10 +10,10 @@ const Typography = ({ data }) => {
       />
       <div className="width-20 pl-10">
         <div className="flex justify-around items-center ">
-          <span className=" text-5xl">
+          <span className=" text-4xl">
             {Math.round(toFahrenheit(data?.main.temp))}
           </span>
-          <span className="text-3xl">
+          <span className="text-2xl">
             {" "}
             <sup>°F</sup>
           </span>
@@ -24,7 +24,7 @@ const Typography = ({ data }) => {
           <span>H:{Math.round(toFahrenheit(data?.main.temp_max))} °F </span>
           <span>L:{Math.round(toFahrenheit(data?.main.temp_min))} °F</span>
         </div>
-        <div className="flex justify-around text-2xl flex-no-wrap ">
+        <div className="flex justify-around text-xl flex-no-wrap ">
           <p>{data?.city}</p>
         </div>
       </div>
