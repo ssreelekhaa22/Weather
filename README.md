@@ -2,6 +2,9 @@
 
 This is a simple weather app built with React. It allows you to search for a city and displays the current weather and forecast for the selected location.
 
+Design:[Figma](https://www.figma.com/file/PXcD0nDkdC5Qxl9bMVWfXj/Untitled?type=design&node-id=0-1&t=vdkfhxZN9wk2yorJ-0)
+Deployment: [Vercel](weather-snowy-three.vercel.app)
+
 ## Features
 
 - Search for a city and retrieve weather information
