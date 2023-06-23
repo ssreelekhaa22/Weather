@@ -43,18 +43,18 @@ const Card = ({ data, dailyTemp, conditionNow, variant }) => {
           fontWeight: "bold",
         }}>
         {conditionNow && (
-          <div className="flex justify-around max-width">
-            <div className="flex flex-column items-center">
+          <div className="flex justify-around w-full">
+            <div className="flex flex-col items-center">
               <div className="text-lg">Humidity</div>
               <div className="text-2xl">{data?.main?.humidity}</div>
             </div>
-            <div className="flex flex-column items-center">
+            <div className="flex flex-col items-center">
               <div className="text-lg">Feels like</div>
               <div className="text-2xl">
                 {Math.round(toFahrenheit(data?.main?.feels_like))}
               </div>
             </div>
-            <div className="flex flex-column items-center">
+            <div className="flex flex-col items-center">
               <div className="text-lg">Wind</div>
               <div className="text-2xl">{`${Math.round(
                 data?.wind?.speed
@@ -64,11 +64,9 @@ const Card = ({ data, dailyTemp, conditionNow, variant }) => {
         )}
 
         {dailyTemp && (
-          <div className="flex">
+          <div className="flex no-wrap justify-around w-full p-2">
             {data.list.splice(0, 5).map((item, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col justify-between items-center mx-10">
+              <div key={idx} className="flex flex-col items-center">
                 <div>{forecastDates[idx]}</div>
                 <img
                   src={`icons/${item.weather[0].icon}.png`}

@@ -6,7 +6,7 @@ const Typography = ({ data }) => {
       <img
         src={`icons/${data?.weather[0]?.icon}.png`}
         alt="weather"
-        className=" max-width-20 width-50"
+        className="h-40 w-40"
       />
       <div className="width-20 pl-10">
         <div className="flex justify-around items-center ">

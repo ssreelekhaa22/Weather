@@ -17,73 +17,9 @@
   background-size: cover;
 }
 
-header {
-  font-family: "Rowdies";
-}
-
-body {
+* {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-
   font-family: "Rowdies";
-}
-
-.quote-text {
-  font-family: "Roboto Serif", serif;
-}
-.flex-column {
-  flex-direction: column;
-}
-.border-none {
-  border: none;
-}
-.margin-0 {
-  margin: 0;
-}
-.padding-0 {
-  padding: 0;
-}
-.mr-25 {
-  margin-right: 25px;
-}
-.ml-8 {
-  margin-left: 8px;
-}
-.mt-10 {
-  margin-top: 10px;
-}
-.block {
-  display: block;
-}
-.inline {
-  display: inline;
-}
-
-.width-50 {
-  width: 50%;
-}
-.width-15 {
-  width: 15%;
-}
-.max-width-20 {
-  max-width: 20%;
-}
-
-.max-width {
-  width: 100%;
-}
-/* Flex */
-.flex {
-  display: flex;
-}
-.justify-end {
-  justify-content: flex-end;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-.flex-column {
-  flex-direction: column;
 }
