@@ -4,11 +4,8 @@ import "../App.css";
 import { API_URL, apiKey } from "../api";
 
 const Input = ({ onSearchChange }) => {
-  //   const [city, setCity] = useState("");
   const [search, setSearch] = useState(null);
   const handleOnChange = (searchData) => {
-    // console.log("Handle onChange:", searchData);
-
     if (searchData && searchData.value) {
       setSearch(searchData);
       onSearchChange(searchData);
@@ -29,7 +26,7 @@ const Input = ({ onSearchChange }) => {
         `${API_URL}geo/1.0/direct?q=${input}&appid=${apiKey}&limit=5`
       );
       const response_1 = await response.json();
-      console.log("res", response_1);
+
       const options = response_1.map((city) => {
         const state = city.state ? city.state + ", " : "";
         return {
